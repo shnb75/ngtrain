@@ -1,4 +1,4 @@
-import { enableProdMode } from '@angular/core';
+/*port { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -26,35 +26,27 @@ for (let idx in cars){
 }
 
 console.log("---------------------------------------");
+*/
+
+let r ="*";
+let c =0;
+for (let j=0;i<4;i++){
+  for (let j=1;j<5;j++){
+    if(c=5) {
+      console.log(r);
+
+    }
+    c+(i-1);
+    ++c;
+
+
+
+    }
+
+  }
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
