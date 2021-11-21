@@ -197,8 +197,8 @@ class Pestandar extends Animal{
 
 }
 
-let shahin:string=new Parande('');
-let aligator:string=new Khazande('');
+let shahin:Parande=new Parande();
+let aligator:Khazande=new Khazande();
 
 
 
