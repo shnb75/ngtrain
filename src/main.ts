@@ -28,25 +28,75 @@ for (let idx in cars){
 console.log("---------------------------------------");
 */
 
-let r ="*";
-let c =0;
-for (let j=0;i<4;i++){
-  for (let j=1;j<5;j++){
-    if(c=5) {
-      console.log(r);
-
-    }
-    c+(i-1);
-    ++c;
 
 
 
-    }
+/*
+console.log("salam \n new line ");
+let n=9;
 
+for (let i=0;i<n;i++){
+  for (let j=0;j<(n-i-1);j++){
+      console.log(" ");}
+    for (let j = 0; j<(2 * i + 1);j++){
+      console.log("*");}
+    console.log("\n");
+}
+ }*/
+
+
+let n = 5;
+let string = "";
+
+
+for (let i = 1; i <= n; i++) {
+
+  for (let j = n; j > i; j--) {
+    string += " ";
   }
 
+  for (let k = 0; k < i * 2 - 1; k++) {
+    if (k === 0 || k === 2 * i - 2) {
+      string += "*";
+    }
+    else {
+      string += " ";
+    }
+  }
+  string += "\n";
+}
+
+for (let i = 1; i <= n - 1; i++) {
+
+  for (let j = 0; j < i; j++) {
+    string += " ";
+  }
+
+  for (let k = (n - i) * 2 - 1; k >= 1; k--) {
+    if (k === 1 || k === (n - i) * 2 - 1) {
+      string += "*";
+    }
+    else {
+      string += " ";
+    }
+  }
+  string += "\n";
+}
+;
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+console.log(string);
