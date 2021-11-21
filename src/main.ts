@@ -108,11 +108,11 @@ class Car {
 
   }
 
+*/
 
   constructor(
     public model:string
   ) {}
-*/
 
   move(){
     console.log(this.model + this.sokht + ':move');
