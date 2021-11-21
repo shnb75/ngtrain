@@ -96,71 +96,122 @@ console.log(string);
 */
 
 
-function sum(num1: number, num2: number): number {
-  return (num1 + num2);
-}
+class Car {
+  color: string = '';
+   private sokht: string = '50';
+  private _cspeed: string = '50';
 
-let a: number;
-a = sum(3, 5);
-console.log(a);
-sum(1, 4);
 
-sum(3, 8);
+/*  constructor(model:string) {
+    console.log('constracture');
+    this.model=model;
 
-function printf(n1: any, n2?: any) {
-  console.log(n1);
-  if (typeof n2 !== 'undefined') {
-    console.log(n2);
   }
 
 
-}
+  constructor(
+    public model:string
+  ) {}
+*/
 
-printf("salam");
-printf("rdgte", 3);
-
-
-function print1(n1: any, n2: any = "ewfe") {
-  console.log(n1, n2);
-}
-
-print1(3);
-print1(4, 4);
-
-
-function pp(...o: any[]) {
-  console.log(o.length);
-}
-
-pp(1, "adad", 2, 3, "dfsaf");
-
-
-let add = (n1: number, n2: number): number => n1 + n2;
-add(3, 3);
-
-let v: number = add(3, 1);
-console.log(v);
-
-
-function dd(n1: number, n2: number): number {
-  return n1 + n2
-}
-
-
-function mm(n1: number | string, n2: number | string) {
-  if (typeof n1 == 'number' && typeof n2 == 'number') {
-    console.log(n1 + n2)
+  move(){
+    console.log(this.model + this.sokht + ':move');
+  }
+  on(){
+    console.log('on');
+  }
+  off(){
+    console.log('off');
+  }
+  get cspeed(){
+    return this._cspeed;
+  }
+  set cspeed(value:string){
+    this._cspeed=value;
   }
 
 
-  if (typeof n1 == 'string' && typeof n2 == 'string') {
-    console.log(n1 + ' ' + n2);
+
+}
+
+let pride:Car=new Car('pride');
+pride.move();
+
+
+let pride2:Car=new Car('pride');
+
+
+pride2.move();
+
+
+
+
+
+
+
+
+
+
+
+
+
+abstract class Animal{
+  color: string = '';
+  height: string = ''
+  width: string = '';
+
+
+  move(){
+    console.log('');
+  }
+
+  voice(){
+    console.log('');
+  }
+
+
+  }
+
+
+class Khazande extends Animal{
+
+  dozist:string='';
+
+  khazidan(){
+
   }
 }
 
+class Parande extends Animal{
+  count_ball:string='';
+  fly_meter:string='';
 
-mm(7, 2);
-mm('ali', 'farhadi');
+
+
+}
+
+
+class Pestandar extends Animal{
+
+
+
+}
+
+let shahin:string=new Parande('');
+let aligator:string=new Khazande('');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
