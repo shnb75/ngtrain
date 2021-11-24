@@ -98,7 +98,7 @@ console.log(string);
 
 class Car {
   color: string = '';
-   private sokht: string = '50';
+  private sokht: string = '50';
   private _cspeed: string = '50';
 
 
@@ -139,22 +139,9 @@ pride.move();
 
 
 let pride2:Car=new Car('pride');
-
-
 pride2.move();
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 abstract class Animal{
   color: string = '';
   height: string = ''
@@ -199,6 +186,127 @@ class Pestandar extends Animal{
 
 let shahin:Parande=new Parande();
 let aligator:Khazande=new Khazande();
+*/
+
+
+
+
+
+
+
+
+/*
+let firstname:string = "shahab";
+
+let age: number="24";
+
+const age2: number = 34;
+console.log(firstname ,age);
+*/
+
+
+
+
+
+class Human {
+
+  height: string = '';
+  width: string = '';
+
+  eating(){
+    console.log('eating');
+  }
+
+  sleeping(){
+    console.log('sleepign');
+  }
+
+
+}
+
+let shahab:Human = new Human();
+shahab.sleeping();
+shahab.eating();
+
+
+class Sham{
+  name:string = '';
+  constructor(name: string) {
+    this.name = name;
+  }
+  jaraghe(){
+    console.log(this.name + ' jaraghe');
+  }
+  off(){
+    console.log(this.name + ' off');
+  }
+}
+
+class Motor{
+  hp: number = 0;
+  private sham1: Sham = new Sham('sham1');
+  private sham2: Sham = new Sham('sham2');
+  private sham3: Sham = new Sham('sham3');
+  private sham4: Sham = new Sham('sham4');
+
+  start(){
+    console.log('motor start');
+    this.sham1.jaraghe();
+    this.sham2.jaraghe();
+    this.sham3.jaraghe();
+    this.sham4.jaraghe();
+  }
+  stop(){
+    console.log('motor stop');
+    this.sham1.off()
+    this.sham2.off()
+    this.sham3.off()
+    this.sham4.off()
+  }
+}
+
+class PumpBenzin {
+  send(){
+    console.log('pump send benzin');
+
+  }
+  stop(){
+    console.log('pump stop');
+  }
+}
+
+
+class Caar{
+  name:string = '';
+  private motor: Motor = new Motor();
+  private pumpBenzin: PumpBenzin = new PumpBenzin();
+
+
+
+  start(){
+    console.log('car start')
+    this.pumpBenzin.send();
+    this.motor.start();
+  }
+
+  stop(){
+    this.motor.stop();
+    this.pumpBenzin.stop();
+  }
+}
+
+
+let bmw: Caar = new Caar();
+
+bmw.start();
+  bmw.stop();
+
+
+
+
+
+
+
 
 
 
